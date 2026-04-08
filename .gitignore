@@ -60,8 +60,8 @@ wp-content/mu-plugins/wpe-wp-sign-on-plugin*
 /wp-signup.php
 /wp-trackback.php
 /xmlrpc.php
-/wp-admin
-/wp-includes
+# /wp-admin
+# /wp-includes
 /wp-content/index.php
 /wp-content/themes/twentyten
 /wp-content/themes/twentyeleven
