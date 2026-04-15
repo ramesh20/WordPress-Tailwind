@@ -93,8 +93,6 @@ function wp_tailwind_setup() {
 	add_theme_support(
 		'custom-logo',
 		array(
-			'height'      => 250,
-			'width'       => 250,
 			'flex-width'  => true,
 			'flex-height' => true,
 		)

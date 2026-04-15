@@ -1,19 +1,23 @@
 {
   "name": "wp-tailwind",
   "version": "1.0.0",
-  "license": "ISC",
+  "license": "GPL-2.0-or-later",
   "author": "",
-  "main": "index.js",
+  "private": true,
+  "engine": {
+    "node": "v25.2.1",
+    "npm": "11.6.2"
+  },
   "scripts": {
     "start": "wp-scripts start",
     "build": "wp-scripts build",
-    "browsersync": "browser-sync start --proxy 'http://wp-tailwind.test/' --files '**/*.php, build/*.css, build/*.js'"
+    "browsersync": "browser-sync start --proxy 'http://wp-tailwind.test/' --files '**/*.php, build/*.css, build/*.js'",
+    "dev": "concurrently \"npm:start\" \"npm:browsersync\""
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.2.0",
     "@wordpress/babel-preset-default": "^8.39.0",
     "@wordpress/scripts": "^19.2.4",
-    "autoprefixer": "^10.4.24",
     "browser-sync": "^3.0.4",
     "concurrently": "^9.2.1",
     "postcss": "^8.5.6",
