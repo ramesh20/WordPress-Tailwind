@@ -4,9 +4,9 @@
   "license": "GPL-2.0-or-later",
   "author": "",
   "private": true,
-  "engine": {
-    "node": "v25.2.1",
-    "npm": "11.6.2"
+  "engines": {
+    "node": ">=25.0.0",
+    "npm": ">=11.0.0"
   },
   "scripts": {
     "start": "wp-scripts start",

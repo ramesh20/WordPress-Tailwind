@@ -1,5 +1,4 @@
 import './style.scss';
+import './theme.css';
 
 console.log("Tailwind loaded!");
-
-// alert("Tailwind is working!");

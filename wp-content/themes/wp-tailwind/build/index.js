@@ -10,10 +10,22 @@
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ "./src/style.scss");
+/* harmony import */ var _theme_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./theme.css */ "./src/theme.css");
+
 
 console.log("Tailwind loaded!");
 
-// alert("Tailwind is working!");
+/***/ },
+
+/***/ "./src/theme.css"
+/*!***********************!*\
+  !*** ./src/theme.css ***!
+  \***********************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
 
 /***/ },
 

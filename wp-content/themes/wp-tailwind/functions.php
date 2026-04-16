@@ -7,9 +7,9 @@
  * @package WP-Tailwind
  */
 
-if ( ! defined( '_S_VERSION' ) ) {
+if ( ! defined( 'WP_TAILWIND_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.0' );
+	define( 'WP_TAILWIND_VERSION', '1.0.0' );
 }
 
 /**
@@ -136,17 +136,17 @@ add_action( 'widgets_init', 'wp_tailwind_widgets_init' );
  * Enqueue scripts and styles.
  */
 function wp_tailwind_scripts() {
-	wp_enqueue_style( 'wp-tailwind-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'wp-tailwind-style', get_stylesheet_uri(), array(), WP_TAILWIND_VERSION );
 	wp_style_add_data( 'wp-tailwind-style', 'rtl', 'replace' );
 
 	wp_enqueue_style(
         'custom-style',
         get_template_directory_uri() . '/build/style-index.css',
         [],
-        _S_VERSION
+        WP_TAILWIND_VERSION
     );
 
-	wp_enqueue_script( 'wp-tailwind-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'wp-tailwind-navigation', get_template_directory_uri() . '/js/navigation.js', array(), WP_TAILWIND_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
